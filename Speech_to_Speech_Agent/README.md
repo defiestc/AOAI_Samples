@@ -26,7 +26,7 @@ The Speech to Speech Agent is designed to convert spoken language input into spo
 
 1. Clone the repository:
     ```bash
-    git clone https://github.com/defiestc/AOAI_Samples.git
+    git clone https://github.com/defiestc/Azure_OpenAI_Samples.git
     cd AOAI_Samples/Speech_to_Speech_Agent
     ```
 
