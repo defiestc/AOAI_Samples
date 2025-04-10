@@ -4,7 +4,3 @@ This repository acts as the top-level directory for Azure AI sample code and exa
 
 Use the samples in this repository to try out Azure AI scenarios on your local machine!
 
-
-## Star History
-
-[![Star History Chart](https://api.star-history.com/svg?repos=monuminu/AOAI_Samples&type=Date)](https://star-history.com/#monuminu/AOAI_Samples&Date)
