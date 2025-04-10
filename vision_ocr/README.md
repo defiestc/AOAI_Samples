@@ -1,6 +1,5 @@
-Welcome to the Azure AI Samples repository!
+Welcome to the Azure AI Vision OCR sample repository!
 
-This repository acts as the top-level directory for Azure AI sample code and examples. It includes notebooks and sample code that contain end-to-end samples as well as smaller code snippets for common developer tasks.
+This repository contains sample Python code that demonstrates Azure AI Vision using optical character recogniztion or OCR to read words from images.  The sample application will then return the words and provide the location of the words on the image and the confidence level, which can be used to determine precision of the OCR. 
 
-Use the samples in this repository to try out Azure AI scenarios on your local machine!
 
