@@ -4,11 +4,11 @@ Here is an updated README that includes the environment variables needed for the
 
 # Speech to Speech Agent
 
-This project is part of the `Azure_OpenAI_Samples` repository, demonstrating a Speech to Speech Agent using Azure OpenAI services.
+This project is part of the `Azure_AI_Samples` repository, demonstrating a Speech to Speech Agent using Azure OpenAI services.
 
 ## Overview
 
-The Speech to Speech Agent is designed to convert spoken language input into spoken language output, leveraging Azure OpenAI's capabilities. This agent can be used in various applications, including virtual assistants, customer service bots, and interactive voice response systems.
+The Speech to Speech Agent is designed to convert spoken language to text (STT) as a prompt to an Azure Open AI model (LLM), and output as a spoken language (TTS), leveraging Azure AI's and OpenAI's capabilities. This agent can be used in various applications, including virtual assistants, customer service bots, and interactive voice response systems.
 
 ## Folder Structure
 
@@ -28,8 +28,8 @@ The Speech to Speech Agent is designed to convert spoken language input into spo
 
 1. Clone the repository:
     ```bash
-    git clone https://github.com/defiestc/Azure_OpenAI_Samples.git
-    cd AOAI_Samples/Speech_to_Speech_Agent
+    git clone https://github.com/defiestc/Azure_AI_Samples.git
+    cd Azure_AI_Samples/Speech_to_Speech_Agent
     ```
 
 2. Create and activate a virtual environment (optional but recommended):
