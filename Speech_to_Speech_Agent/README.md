@@ -26,7 +26,7 @@ The Speech to Speech Agent is designed to convert spoken language input into spo
 
 1. Clone the repository:
     ```bash
-    git clone https://github.com/monuminu/AOAI_Samples.git
+    git clone https://github.com/defiestc/AOAI_Samples.git
     cd AOAI_Samples/Speech_to_Speech_Agent
     ```
 
@@ -45,26 +45,26 @@ The Speech to Speech Agent is designed to convert spoken language input into spo
 
 The following environment variables need to be set for the application to function properly. You can set these variables in your operating system or use a `.env` file.
 
-- `OPEN_AI_KEY`: Your Azure OpenAI API key
-- `OPEN_AI_ENDPOINT`: Your Azure OpenAI endpoint, e.g., `https://YOUR_OPEN_AI_RESOURCE_NAME.openai.azure.com/`
-- `OPEN_AI_DEPLOYMENT_NAME`: The deployment name of your Azure OpenAI model
+- `AZURE_OPENAI_KEY`: Your Azure OpenAI API key
+- `AZURE_OPENAI_ENDPOINT`: Your Azure OpenAI endpoint, e.g., `https://YOUR_OPEN_AI_RESOURCE_NAME.openai.azure.com/`
+- `AZURE_OPENAI_DEPLOYMENT_MODEL`: The deployment name of your Azure OpenAI model
 - `SPEECH_KEY`: Your Azure Cognitive Services Speech API key
 - `SPEECH_REGION`: The region of your Azure Cognitive Services Speech API
 
 You can set these variables in your terminal session as follows:
 ```bash
-export OPEN_AI_KEY="your_open_ai_key"
-export OPEN_AI_ENDPOINT="your_open_ai_endpoint"
-export OPEN_AI_DEPLOYMENT_NAME="your_open_ai_deployment_name"
+export AZURE_OPENAI_KEY="your_open_ai_key"
+export AZURE_OPENAI_ENDPOINT="your_open_ai_endpoint"
+export AZURE_OPENAI_DEPLOYMENT_MODEL="your_open_ai_deployment_name"
 export SPEECH_KEY="your_speech_key"
 export SPEECH_REGION="your_speech_region"
 ```
 
 Alternatively, you can create a `.env` file in the project directory with the following content:
 ```
-OPEN_AI_KEY=your_open_ai_key
-OPEN_AI_ENDPOINT=your_open_ai_endpoint
-OPEN_AI_DEPLOYMENT_NAME=your_open_ai_deployment_name
+AZURE_OPENAI_KEY=your_open_ai_key
+AZURE_OPENAI_ENDPOINT=your_open_ai_endpoint
+AZURE_OPENAI_DEPLOYMENT_MODEL=your_open_ai_deployed_LLM_name
 SPEECH_KEY=your_speech_key
 SPEECH_REGION=your_speech_region
 ```
