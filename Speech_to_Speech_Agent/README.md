@@ -20,7 +20,7 @@ The Speech to Speech Agent is designed to convert spoken language input into spo
 ### Prerequisites
 
 - Python 3.7 or higher
-- Azure account with OpenAI services enabled
+- Azure account with Azure OpenAI and Azure Speech services enabled
 
 ### Installation
 
@@ -45,7 +45,7 @@ The Speech to Speech Agent is designed to convert spoken language input into spo
 
 The following environment variables need to be set for the application to function properly. You can set these variables in your operating system or use a `.env` file.
 
-- `AZURE_OPENAI_KEY`: Your Azure OpenAI API key
+- `AZURE_OPENAI_API_KEY`: Your Azure OpenAI API key
 - `AZURE_OPENAI_ENDPOINT`: Your Azure OpenAI endpoint, e.g., `https://YOUR_OPEN_AI_RESOURCE_NAME.openai.azure.com/`
 - `AZURE_OPENAI_DEPLOYMENT_MODEL`: The deployment name of your Azure OpenAI model
 - `SPEECH_KEY`: Your Azure Cognitive Services Speech API key
@@ -53,7 +53,7 @@ The following environment variables need to be set for the application to functi
 
 You can set these variables in your terminal session as follows:
 ```bash
-export AZURE_OPENAI_KEY="your_open_ai_key"
+export AZURE_OPENAI_API_KEY="your_open_ai_key"
 export AZURE_OPENAI_ENDPOINT="your_open_ai_endpoint"
 export AZURE_OPENAI_DEPLOYMENT_MODEL="your_open_ai_deployment_name"
 export SPEECH_KEY="your_speech_key"
