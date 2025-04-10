@@ -1,4 +1,3 @@
-
 import openai
 
 openai.api_base = "https://streaming-endpoint.<Your Region>.inference.ml.azure.com/v1"
