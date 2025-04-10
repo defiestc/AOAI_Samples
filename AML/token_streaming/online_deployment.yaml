@@ -18,3 +18,4 @@ readiness_probe:
   period: 90
   timeout: 30
   failure_threshold: 120
+  
