@@ -21,8 +21,7 @@ The Speech to Speech Agent is designed to convert spoken language input into spo
 
 - Python 3.7 or higher
 - Azure account with Azure OpenAI and Azure Speech services enabled
-
-![AzureSpeechService](https://github.com/user-attachments/assets/7e5e9798-d7e9-467b-8ff6-cc71ba63a559)
+![AzureSpeechService](https://github.com/user-attachments/assets/b8c08668-8391-4dde-b603-4d6c1ab7649b)
 
 ### Installation
 
