@@ -12,3 +12,5 @@ inference_config:
   scoring_route:
     port: 5001
     path: /score
+
+    
