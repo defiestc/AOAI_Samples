@@ -4,7 +4,7 @@ Here is an updated README that includes the environment variables needed for the
 
 # Speech to Speech Agent
 
-This project is part of the `AOAI_Samples` repository, demonstrating a Speech to Speech Agent using Azure OpenAI services.
+This project is part of the `Azure_OpenAI_Samples` repository, demonstrating a Speech to Speech Agent using Azure OpenAI services.
 
 ## Overview
 
