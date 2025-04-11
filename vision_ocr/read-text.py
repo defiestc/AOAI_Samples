@@ -3,6 +3,7 @@ import os
 import time
 from PIL import Image, ImageDraw
 from matplotlib import pyplot as plt
+import numpy as np
     
 # import namespaces
 from azure.ai.vision.imageanalysis import ImageAnalysisClient
@@ -18,6 +19,9 @@ def main():
         load_dotenv()
         ai_endpoint = 'AZURE_AI_ENDPOINT'
         ai_key = 'AZURE_AI_KEY'
+
+        #ai_endpoint = 'https://rscazureaisvcs2.cognitiveservices.azure.com/'
+        #ai_key = 'DM1XT6jV202Cr66VVNmICBYDJSu0tIBzb5eRRTWwMmrWvvEXeyEyJQQJ99BDACMsfrFXJ3w3AAAAACOGM8G8'
 
         # Authenticate Azure AI Vision client
         cv_client = ImageAnalysisClient(
@@ -54,6 +58,9 @@ def GetTextRead(image_file):
 
     # Display the image and overlay it with the extracted text
     if result.read is not None:
+       
+       confidence_scores = []
+
        print("\nText:")
 
        # Prepare image for drawing
@@ -80,6 +87,9 @@ def GetTextRead(image_file):
            for word in line.words:
                r = word.bounding_polygon
                bounding_polygon = ((r[0].x, r[0].y),(r[1].x, r[1].y),(r[2].x, r[2].y),(r[3].x, r[3].y))
+
+               confidence_scores.append(word.confidence)
+
                print(f"    Word: '{word.text}', Bounding Polygon: {bounding_polygon}, Confidence: {word.confidence:.4f}")
     
                # Draw word bounding polygon
@@ -89,6 +99,9 @@ def GetTextRead(image_file):
                # Draw line bounding polygon
                if drawLinePolygon:
                    draw.polygon(bounding_polygon, outline=color, width=3)
+       
+       # Print average confidence score
+       print(f"\n  Average Confidence Score:  {np.mean(confidence_scores):.4f}")
        
        # Save image
        plt.imshow(image)
