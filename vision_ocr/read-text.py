@@ -20,9 +20,6 @@ def main():
         ai_endpoint = 'AZURE_AI_ENDPOINT'
         ai_key = 'AZURE_AI_KEY'
 
-        #ai_endpoint = 'https://rscazureaisvcs2.cognitiveservices.azure.com/'
-        #ai_key = 'DM1XT6jV202Cr66VVNmICBYDJSu0tIBzb5eRRTWwMmrWvvEXeyEyJQQJ99BDACMsfrFXJ3w3AAAAACOGM8G8'
-
         # Authenticate Azure AI Vision client
         cv_client = ImageAnalysisClient(
             endpoint=ai_endpoint,
